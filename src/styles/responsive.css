@@ -1,0 +1,74 @@
+/* Responsive Design */
+@media screen and (min-width: 700px) {
+    .restaurants {
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: 10px;
+        grid-row-gap: 16px;
+    }
+    .restaurant-hero img{
+      max-width: 400px;
+    }
+  }
+  @media screen and (min-width: 900px) {
+    .restaurants {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+  }
+  @media screen and (min-width: 1200px) {
+    main {
+        max-width: 1200px;
+        margin: 0 auto; 
+    }
+  }
+  @media (max-width: 768px) {
+    .restaurant-review__card-wrapper {
+      display: grid;
+      gap: 12px;
+    }
+    .restaurant-detail .restaurant-header{
+      display: block;
+    }
+    .restaurant-detail .restaurant-hero img {
+      max-width: 400px;
+      width: 100%; 
+      height: auto;    
+      margin: 20px auto;  
+      display: block;
+    }
+    .restaurant-menu__items {
+      display: grid;
+      grid-template-columns: 1fr; /* Two equal columns */
+      gap: 16px; /* Space between columns */
+      margin: 4px 2em;
+      align-items: start;
+    }
+    main {
+        margin: 0;
+    }
+    .menu-button {
+        display: block;
+    }
+    .nav-menu {
+        position: absolute;
+        top: 60px;
+        right: -200px;
+        transition: all 0.3s;
+        padding: 8px;
+        overflow: hidden;
+        display: none;
+        flex-direction: column;
+    }
+    .nav-menu.open {
+        right: 0;
+    }
+    .nav-menu a {
+      padding: 14px 18px;
+    }
+    .hero-text {
+        font-size: 18px;
+    }
+    .app-bar__brand h1 {
+      font-size: 16px;
+    }  
+  }
+  
