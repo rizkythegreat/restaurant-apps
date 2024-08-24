@@ -15,7 +15,6 @@ const Detail = {
     const restaurant = await RestaurantDBSource.detailRestaurant(url.id)
     const restaurantContainer = document.querySelector('#restaurant')
     restaurantContainer.innerHTML = createRestaurantDetailTemplate(restaurant)
-    console.log(restaurant)
 
     LikeButtonInitiator.init({
       likeButtonContainer: document.querySelector('#likeButtonContainer'),

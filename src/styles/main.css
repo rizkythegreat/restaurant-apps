@@ -71,6 +71,9 @@ body {
   padding: 14px 24px;
   display: block;
 }
+.nav-menu a:hover{
+  filter: brightness(85%);
+}
 .menu-button {
   background: none;
   border: none;
@@ -316,9 +319,6 @@ main h2 {
   font-size: 14px;
   line-height: 1.5em;
   text-align: justify;
-}
-.restaurant-title:hover {
-  opacity: 0.5;
 }
 .restaurant-hero {
   position: relative;
