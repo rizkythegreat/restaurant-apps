@@ -4,7 +4,7 @@ import { createRestaurantTemplate } from '../templates/template-creator'
 const HomePage = {
   async render () {
     return `
-        <section class="restaurant-list">
+        <section id="mainContent" class="restaurant-list">
             <h2>Restaurant Lists</h2>
             <div id="restaurants" class="restaurants">
             </div>

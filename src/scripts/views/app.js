@@ -20,6 +20,8 @@ class App {
       content: this._content,
       hero: this._hero
     })
+
+    this._handleSkipContentLink()
   }
 
   async renderPage () {
@@ -32,6 +34,22 @@ class App {
     }
     this._content.innerHTML = await page.render()
     await page.afterRender()
+
+    this._handleSkipContentLink()
+  }
+
+  _handleSkipContentLink () {
+    const skipLink = document.querySelector('.skip-link')
+    const mainContent = document.querySelector('#mainContent')
+
+    if (skipLink && mainContent) {
+      skipLink.addEventListener('click', (event) => {
+        event.preventDefault()
+        mainContent.setAttribute('tabindex', '-1')
+        mainContent.focus()
+        mainContent.removeAttribute('tabindex')
+      })
+    }
   }
 }
 
