@@ -22,6 +22,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
   window.addEventListener('load', () => {
     app.renderPage()
-    // changed
+    // changedd
   })
 })
