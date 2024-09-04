@@ -6,7 +6,7 @@
         grid-row-gap: 16px;
     }
     .restaurant-hero img{
-      max-width: 400px;
+      max-width: 100%;
     }
   }
   @media screen and (min-width: 900px) {
@@ -31,6 +31,9 @@
     }
   }
   @media (max-width: 768px) {
+    .restaurant-review__card {
+      width: 100%;
+    }
     .restaurant-review__card-wrapper {
       display: grid;
       gap: 12px;
@@ -39,21 +42,21 @@
       display: block;
     }
     .restaurant-detail .restaurant-hero img {
-      max-width: 400px;
+      max-width: 300px;
       width: 100%; 
       height: auto;    
-      margin: 20px auto;  
-      display: block;
+      margin: 20px auto;
     }
     .restaurant-menu__items {
       display: grid;
-      grid-template-columns: 1fr; /* Two equal columns */
-      gap: 16px; /* Space between columns */
+      grid-template-columns: 1fr;
+      gap: 16px;
       margin: 4px 2em;
       align-items: start;
     }
     main {
         margin: 0;
+        padding: 0;
     }
     .menu-button {
         display: block;
