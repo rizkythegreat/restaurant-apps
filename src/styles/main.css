@@ -282,7 +282,7 @@ main h2 {
 }
 .restaurant-review__card
 {
-  width: 400px;
+  width: 50%;
   border: 1px solid #7C93C3;
   margin: 12px auto;
   background-color: #f9f9f9;
@@ -302,7 +302,8 @@ main h2 {
   font-weight: 500;
 }
 .restaurant-review__card-wrapper {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr;
   gap: 12px;
 }
 
