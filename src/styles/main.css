@@ -322,6 +322,9 @@ main h2 {
   text-align: justify;
 }
 .restaurant-hero {
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
   position: relative;
 }
 .restaurant-city {
