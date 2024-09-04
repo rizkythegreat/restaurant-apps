@@ -46,4 +46,7 @@ Scenario('unliking one restaurant', async ({ I }) => {
 
   I.seeElement('#likeButton')
   I.click('#likeButton')
+
+  I.amOnPage('/#/like')
+  I.dontSeeElement('.restaurant-title')
 })

@@ -24,6 +24,9 @@ exports.config = {
   plugins: {
     screenshotOnFail: {
       enabled: false
+    },
+    autoDelay: {
+      enabled: true
     }
   }
 }
