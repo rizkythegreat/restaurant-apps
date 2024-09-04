@@ -4,7 +4,7 @@ import { truncateText } from '../../utils/truncate-text'
 const createRestaurantTemplate = (restaurant) => `
     <div class="restaurant-card">
         <div class="restaurant-hero">
-            <img src="${CONFIG.BASE_IMAGE_URL + CONFIG.SIZE_IMAGE[0] + restaurant.pictureId}" alt="${restaurant.name}">
+            <img class="lazyload" src="https://placehold.co/400" data-src="${CONFIG.BASE_IMAGE_URL + CONFIG.SIZE_IMAGE[0] + restaurant.pictureId}" alt="${restaurant.name}">
             <div class="restaurant-city">
                 <img src="./images/icons/location.png" alt="location-icon" />
                 <p>${restaurant.city}</p>
@@ -25,7 +25,7 @@ const createRestaurantDetailTemplate = (restaurant) => `
     <div class="restaurant-detail">
         <div class="restaurant-header">
         <div class="restaurant-hero">
-            <img src="${CONFIG.BASE_IMAGE_URL + CONFIG.SIZE_IMAGE[1] + restaurant.pictureId}" alt="${restaurant.name}">
+            <img class="lazyload" src="https://placehold.co/400" data-src="${CONFIG.BASE_IMAGE_URL + CONFIG.SIZE_IMAGE[1] + restaurant.pictureId}" alt="${restaurant.name}">
         </div>
         <div class="restaurant-info">
             <p class="restaurant-title">${restaurant.name}</p>
