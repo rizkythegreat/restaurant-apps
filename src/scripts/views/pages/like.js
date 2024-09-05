@@ -14,9 +14,14 @@ const Like = {
   async afterRender () {
     const restaurant = await FavoriteRestaurantIdb.getAllRestaurants()
     const restaurantContainer = document.querySelector('#restaurants')
-    restaurant.forEach((restaurant) => {
-      restaurantContainer.innerHTML += createRestaurantTemplate(restaurant)
-    })
+
+    if (restaurant.length === 0) {
+      restaurantContainer.innerHTML = '<p>Tidak ada data</p>'
+    } else {
+      restaurant.forEach((restaurant) => {
+        restaurantContainer.innerHTML += createRestaurantTemplate(restaurant)
+      })
+    }
   }
 }
 

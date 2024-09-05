@@ -27,11 +27,6 @@ class App {
   async renderPage () {
     const url = UrlParser.parseActiveUrlWithCombiner()
     const page = routes[url]
-    if (url === '/' || url === '/home-page') {
-      this._hero.style.display = 'flex'
-    } else {
-      this._hero.style.display = 'none'
-    }
     this._content.innerHTML = await page.render()
     await page.afterRender()
 

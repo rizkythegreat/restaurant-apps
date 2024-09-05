@@ -8,6 +8,13 @@ module.exports = {
   extends: [
     'standard'
   ],
+  globals: {
+    codecept_helper: 'readonly',
+    Feature: 'readonly',
+    Scenario: 'readonly',
+    Before: 'readonly',
+    locate: 'readonly'
+  },
   parserOptions: {
     ecmaVersion: 12,
     sourceType: 'module'
