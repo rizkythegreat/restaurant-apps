@@ -8,7 +8,7 @@ Before(({ I }) => {
 
 Scenario('showing empty liked restaurants', async ({ I }) => {
   I.seeElement('#mainContent')
-  I.see('Favorite Lists', '.restaurant-list')
+  I.see('Tidak ada data', '.restaurants')
 })
 
 Scenario('liking one restaurant', async ({ I }) => {
